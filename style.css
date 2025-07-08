@@ -517,3 +517,329 @@ form h2 .SocialLinks i:hover{
 .about-us{
     overflow: auto;
 }
+.contactMe {
+    overflow-y: auto;
+    max-height: 100vh;
+    scroll-behavior: smooth;
+    padding: 100px 30px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .HomeContent {
+        padding: 60px;
+    }
+
+    .SideImg {
+        margin-right: 40px;
+    }
+
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-me-table {
+        width: 100%;
+    }
+
+    .skill-bar {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contactMe {
+        grid-template-columns: 1fr;
+    }
+
+    .contactMe form {
+        grid-area: unset;
+    }
+
+    .contactinfo {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    aside {
+        width: 220px;
+    }
+
+    .HomeContent {
+        padding: 40px;
+    }
+
+    .SideImg {
+        display: none;
+    }
+
+    .about-me-divison {
+        flex-direction: column;
+    }
+
+    .buttonGroup {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        padding: 60px 30px;
+        gap: 20px;
+    }
+
+    .services .service {
+        padding: 20px;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .services .heading {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        padding: 60px 30px;
+    }
+
+    .contactMe {
+        display: flex;
+        flex-direction: column;
+        padding: 60px 30px;
+        gap: 20px;
+    }
+
+    .contactinfo {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .contactinfo i {
+        font-size: 1.8rem;
+    }
+
+    .contactMe form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .contactMe form input,
+    .contactMe form textarea {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .contactMe form h2 {
+        font-size: 1.5rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        overflow-x: auto;
+        justify-content: space-around;
+    }
+
+    .Links {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    aside li {
+        padding: 15px;
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+
+    .mySwiper {
+        width: 100vw;
+    }
+
+    .HomeContent h1 {
+        font-size: 2.2em;
+    }
+
+    .HomeContent h2 {
+        font-size: 1.5em;
+    }
+
+    .HomeContent .heroline {
+        font-size: 1.1rem;
+        padding-right: 0;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .services .service {
+        margin: 15px 0;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .contactMe h1 {
+        font-size: 1.8rem;
+    }
+
+    .contactMe form h2 {
+        font-size: 1.2rem;
+    }
+
+    .contactinfo {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .HomeContent {
+        padding: 30px 15px;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    .HomeContent h1 {
+        font-size: 1.8em;
+    }
+
+    .HomeContent h2 {
+        font-size: 1.3em;
+    }
+
+    .services {
+        padding: 40px 20px;
+    }
+
+    .services .service {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .services .service h2 {
+        font-size: 1.3rem;
+    }
+
+    .services .service i {
+        font-size: 2.5rem;
+    }
+
+    .services .heading {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .gallery {
+        padding: 40px 20px;
+    }
+
+    .contactMe {
+        padding: 40px 20px;
+    }
+
+    .contactMe h1 {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .contactinfo i {
+        font-size: 1.5rem;
+    }
+
+    .about-us {
+        padding: 40px 20px;
+    }
+
+    .aboutme-deatils {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    .skill-bar p {
+        font-size: 1rem;
+    }
+
+    .contactMe form input,
+    .contactMe form textarea {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    footer li {
+        font-size: 0.75rem;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    aside li {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    .HomeContent h1 {
+        font-size: 1.5em;
+    }
+
+    .HomeContent h2 {
+        font-size: 1.2em;
+    }
+
+    .HomeContent .heroline {
+        font-size: 1rem;
+    }
+
+    .buttonGroup button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .services .service i {
+        font-size: 2.2rem;
+    }
+
+    .services .service h2 {
+        font-size: 1.2rem;
+    }
+
+    .contactinfo h3 {
+        font-size: 1rem;
+    }
+
+    .contactMe form h2 {
+        font-size: 1rem;
+    }
+
+    .aboutme-deatils {
+        font-size: 0.9rem;
+    }
+}
