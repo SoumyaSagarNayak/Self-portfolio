@@ -525,7 +525,6 @@ form h2 .SocialLinks i:hover{
 }
 
 
-
 @media screen and (max-width: 1200px) {
     .HomeContent {
         padding: 60px;
@@ -553,17 +552,26 @@ form h2 .SocialLinks i:hover{
     }
 
     .contactMe {
+        display: grid;
         grid-template-columns: 1fr;
-    }
-
-    .contactMe form {
-        grid-area: unset;
+        padding: 60px 30px;
+        gap: 30px;
+        align-items: center;
     }
 
     .contactinfo {
-        flex-direction: row;
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .contactMe form {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        align-items: center;
     }
 }
 
@@ -590,26 +598,28 @@ form h2 .SocialLinks i:hover{
     }
 
     .services {
-        display: flex;
-        flex-direction: column;
-        padding: 60px 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
-    }
-
-    .services .service {
-        padding: 20px;
-        margin: 0 auto;
-        width: 100%;
-        max-width: 500px;
+        padding: 50px 25px;
     }
 
     .services .heading {
+        grid-column: 1/-1;
         text-align: center;
         font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .services .service {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+        transition: all 0.3s ease;
     }
 
     .gallery {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
         padding: 60px 30px;
     }
 
@@ -617,18 +627,25 @@ form h2 .SocialLinks i:hover{
         display: flex;
         flex-direction: column;
         padding: 60px 30px;
-        gap: 20px;
+        gap: 30px;
+        align-items: center;
     }
 
     .contactinfo {
-        flex-direction: row;
-        justify-content: space-evenly;
+        display: flex;
         flex-wrap: wrap;
-        margin-bottom: 30px;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
     }
 
     .contactinfo i {
         font-size: 1.8rem;
+        transition: transform 0.3s ease;
+    }
+
+    .contactinfo i:hover {
+        transform: scale(1.1);
     }
 
     .contactMe form {
@@ -636,20 +653,49 @@ form h2 .SocialLinks i:hover{
         flex-direction: column;
         gap: 15px;
         width: 100%;
-        padding: 0;
+        max-width: 600px;
     }
 
     .contactMe form input,
     .contactMe form textarea {
         width: 100%;
-        padding: 12px;
+        padding: 14px;
         font-size: 1rem;
+        border: 1px solid #444;
+        border-radius: 8px;
+        transition: border 0.3s ease;
+    }
+
+    .contactMe form input:focus,
+    .contactMe form textarea:focus {
+        border-color: #80ed99;
+        outline: none;
     }
 
     .contactMe form h2 {
         font-size: 1.5rem;
-        justify-content: space-between;
+        display: flex;
+        justify-content: center;
         align-items: center;
+    }
+
+    .contactMe button {
+        align-self: center;
+        padding: 12px 24px;
+        background-color: #80ed99;
+        border: none;
+        border-radius: 6px;
+        color: #212529;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .contactMe button:hover {
+        background-color: #64d17f;
+    }
+
+    .about-me-table .buttonGroup {
+        padding: 30px 0;
     }
 }
 
@@ -699,23 +745,45 @@ form h2 .SocialLinks i:hover{
         font-size: 2rem;
     }
 
-    .services .service {
-        margin: 15px 0;
-        width: 90%;
-        max-width: 400px;
+    .services {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+        gap: 20px;
     }
 
-    .contactMe h1 {
-        font-size: 1.8rem;
+    .services .service {
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 20px;
+        gap: 20px;
+    }
+
+    .contactMe {
+        padding: 40px 20px;
+        gap: 20px;
+        align-items: center;
     }
 
     .contactMe form h2 {
         font-size: 1.2rem;
+        text-align: center;
     }
 
-    .contactinfo {
-        flex-direction: column;
-        gap: 20px;
+    .contactMe form {
+        gap: 10px;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .contactMe form input,
+    .contactMe form textarea {
+        font-size: 1rem;
     }
 }
 
@@ -738,11 +806,12 @@ form h2 .SocialLinks i:hover{
 
     .services {
         padding: 40px 20px;
+        gap: 20px;
     }
 
     .services .service {
-        padding: 20px;
         text-align: center;
+        padding: 20px;
     }
 
     .services .service h2 {
@@ -759,20 +828,45 @@ form h2 .SocialLinks i:hover{
     }
 
     .gallery {
+        grid-template-columns: 1fr;
         padding: 40px 20px;
+        gap: 20px;
+    }
+
+    .gallery .project img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 
     .contactMe {
-        padding: 40px 20px;
+        padding: 30px 20px;
+        gap: 20px;
+        align-items: center;
     }
 
-    .contactMe h1 {
-        font-size: 1.5rem;
-        padding: 10px;
+    .contactinfo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        text-align: center;
     }
 
     .contactinfo i {
         font-size: 1.5rem;
+    }
+
+    .contactMe h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .contactMe form h2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        font-size: 1.2rem;
     }
 
     .about-us {
@@ -791,6 +885,11 @@ form h2 .SocialLinks i:hover{
     .contactMe form input,
     .contactMe form textarea {
         font-size: 1rem;
+        padding: 12px;
+    }
+
+    .contactMe button {
+        width: 100%;
         padding: 12px;
     }
 
@@ -843,3 +942,4 @@ form h2 .SocialLinks i:hover{
         font-size: 0.9rem;
     }
 }
+
