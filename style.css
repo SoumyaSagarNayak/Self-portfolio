@@ -71,6 +71,10 @@ aside li i {
 
     flex: 1;
     height: 100%;
+     width: 80vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #343a40;
 }
 
 .home-slide {
@@ -200,12 +204,7 @@ aside li i {
 
 
 
-.mySwiper {
-    width: 80vw;
-    height: 100vh;
-    overflow: hidden;
-    background-color: #343a40;
-}
+
 
 .swiper-slide {
     width: 100%;
@@ -358,10 +357,12 @@ aside li i {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 33%);
-    padding:100px;
-    grid-template-rows: 100px calc(50% - 50px) calc(50% - 50px);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 10px 5px 40px 5px;
 }
+
+
 
 .gallery h1,
 .gallery h2 {
@@ -387,8 +388,56 @@ aside li i {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    object-fit: cover;
+    object-fit:scale-down;
     border:none;
+}
+.projects-section {
+    display: flex;
+    flex-direction: column;
+   height: 100%;
+    padding: 60px 40px;
+    box-sizing: border-box;
+    color: white;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    background: #1d1f22;
+    padding: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.project:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(128, 237, 153, 0.3);
+}
+
+.project img {
+    aspect-ratio: 4 / 3; /* maintain ratio */
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.project-title {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+
+.gallery-scroll-container {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 10px;
+    scrollbar-width: thin;
+    /* scrollbar-color: #80ed99 #212529; */
 }
 
 .contactMe {
