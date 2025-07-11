@@ -63,9 +63,11 @@ aside li::after {
 aside li i {
   font-size: 1.3rem;
 }
+
 .activeLink {
   color: #80ed99;
 }
+
 .mySwiper {
   flex: 1;
   height: 100%;
@@ -335,13 +337,16 @@ aside li i {
   border-radius: 5px;
   margin: 20px auto;
 }
+
 .service h2 {
   color: #80ed99;
 }
+
 .service:hover {
   background-color: #80ed99;
   color: #176d2d;
 }
+
 .service:hover h2,
 .service:hover i {
   color: #176d2d;
@@ -381,6 +386,7 @@ aside li i {
   object-fit: scale-down;
   border: none;
 }
+
 .projects-section {
   display: flex;
   flex-direction: column;
@@ -389,6 +395,7 @@ aside li i {
   box-sizing: border-box;
   color: white;
 }
+
 .project {
   display: flex;
   flex-direction: column;
@@ -406,11 +413,13 @@ aside li i {
 }
 
 .project img {
-  aspect-ratio: 4 / 3; /* maintain ratio */
+  aspect-ratio: 4 / 3;
+  /* maintain ratio */
   width: 100%;
   object-fit: cover;
   display: block;
 }
+
 .project-title {
   text-align: center;
   color: white;
@@ -430,9 +439,7 @@ aside li i {
 .contactMe {
   display: grid;
   grid-template-columns: 20% 80%;
-  grid-template-rows: 80px calc(25% - 20px) calc(25% - 20px) calc(25% - 20px) calc(
-      25% - 20px
-    );
+  grid-template-rows: 80px calc(25% - 20px) calc(25% - 20px) calc(25% - 20px) calc(25% - 20px);
   position: relative;
   padding: 100px;
 }
@@ -516,10 +523,12 @@ aside li i {
 .contactMe form textarea:focus {
   border: 1px solid #85f69f !important;
 }
+
 .contactMe button {
   grid-column: 1 / span 2;
   margin: 20px auto;
 }
+
 footer {
   position: absolute;
   bottom: 0px;
@@ -530,9 +539,11 @@ footer {
   font-weight: 200;
   font-size: 0.8rem;
 }
+
 footer li {
   padding: 10px;
 }
+
 form h2 .SocialLinks {
   padding: 5px;
   width: fit-content;
@@ -541,17 +552,21 @@ form h2 .SocialLinks {
   background-color: #212529;
   border-radius: 30px;
 }
+
 form h2 .SocialLinks i {
   padding: 10px;
   border-radius: 50%;
   transition-duration: 0.25s;
 }
+
 form h2 .SocialLinks i:hover {
   background-color: #176d2d;
 }
+
 .about-us {
   overflow: auto;
 }
+
 .contactMe {
   overflow-y: auto;
   max-height: 100vh;
