@@ -1,994 +1,978 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bonbon&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bonbon&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
+  height: 100vh;
 }
 
 main {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    font-family: Poppins;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  font-family: Poppins;
 }
 
 aside {
-    width: 280px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    font-size: 1.1rem;
-    background-color: #212529;
-    backdrop-filter: blur(20px);
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 1.1rem;
+  background-color: #212529;
+  backdrop-filter: blur(20px);
 }
 
 .Links {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 aside li {
-    list-style-type: none;
-    display: flex;
-    padding: 20px;
-    gap: 10px;
-    color: white;
-    align-items: center;
-    cursor: pointer;
-    position: relative;
-    transition-duration: 0.2s;
+  list-style-type: none;
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  color: white;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 0.2s;
 }
 
 aside li:hover {
-    color: #80ed99;
+  color: #80ed99;
 }
 
 aside li::after {
-    position: absolute;
-    width: 100%;
-    left: 0px;
-    height: 1px;
-    background: linear-gradient(to left, transparent, #ffffff24, transparent);
-    content: '';
-    bottom: 0px;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  height: 1px;
+  background: linear-gradient(to left, transparent, #ffffff24, transparent);
+  content: "";
+  bottom: 0px;
 }
 
 aside li i {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
-.activeLink{
-    color:#80ed99
+.activeLink {
+  color: #80ed99;
 }
 .mySwiper {
-
-    flex: 1;
-    height: 100%;
-     width: 80vw;
-    height: 100vh;
-    overflow: hidden;
-    background-color: #343a40;
+  flex: 1;
+  height: 100%;
+  width: 80vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #343a40;
 }
 
 .home-slide {
-    color: white;
-    display: flex;
-    background-color: #343a40;
+  color: white;
+  display: flex;
+  background-color: #343a40;
 }
 
 .HomeContent {
-    margin: auto 0px;
-    flex: 1;
-    height: auto;
-    
-    padding: 100px;
-    user-select: none;
+  margin: auto 0px;
+  flex: 1;
+  height: auto;
+
+  padding: 100px;
+  user-select: none;
 }
 
 .SideImg {
-    width: 30%;
+  width: 30%;
 
-
-    margin: auto 10px;
-    margin-right: 100px;
-    position: relative;
+  margin: auto 10px;
+  margin-right: 100px;
+  position: relative;
 }
 
 .SideImg img {
-    width: 100%;
-    border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .SideImg .top-right-corner,
 .bottom-left-corner {
-    position: absolute;
+  position: absolute;
 }
 
 .bottom-left-corner {
-    left: -50px;
-    bottom: -50px;
-    rotate: -90deg;
+  left: -50px;
+  bottom: -50px;
+  rotate: -90deg;
 }
 
 .top-right-corner {
-    right: -50px;
-    top: -50px;
-    rotate: 90deg;
+  right: -50px;
+  top: -50px;
+  rotate: 90deg;
 }
 
 .hr1 {
-    width: 150px;
-    height: 10px;
-    border: none;
-    background: #80ed99;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+  width: 150px;
+  height: 10px;
+  border: none;
+  background: #80ed99;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
 .hr2 {
-    width: 10px;
-    height: 120px;
-    border-bottom-left-radius: 3px;
+  width: 10px;
+  height: 120px;
+  border-bottom-left-radius: 3px;
 
-    background: #80ed99;
-    border: none;
-    border-bottom-right-radius: 3px;
+  background: #80ed99;
+  border: none;
+  border-bottom-right-radius: 3px;
 }
 
 .HomeContent h1 {
-    font-size: 3em;
-    font-weight: 700;
-    margin-bottom: 10px;
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .HomeContent h2 {
-    font-size: 2.3em;
-    margin-bottom: 10px;
-    font-weight: 600;
-
+  font-size: 2.3em;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .HomeContent h1 .stylized-name {
-    font-weight: 700;
-    color: #80ed99;
+  font-weight: 700;
+  color: #80ed99;
 }
 
 .proffesions {
-    color: #85f69f;
+  color: #85f69f;
 }
 
 .HomeContent .heroline {
-    font-size: 1.5rem;
-    font-weight: 300;
-    padding-right:50px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-right: 50px;
 }
 
 .buttonGroup {
-    display: flex;
-    padding: 10px 0px;
-    margin-top: 10px;
+  display: flex;
+  padding: 10px 0px;
+  margin-top: 10px;
 }
 
-.buttonGroup button ,.primary{
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin: 5px;
-    cursor: pointer;
-    background-color: #1d8637;
-    color: white;
-    border-radius: 5px;
+.buttonGroup button,
+.primary {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #1d8637;
+  color: white;
+  border-radius: 5px;
 }
 
 .slide-help {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-    font-weight: 400;
-    z-index: 100;
-    left: 0%;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 1.2rem;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  z-index: 100;
+  left: 0%;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.2rem;
 }
 
-
-
-
-
 .swiper-slide {
-    width: 100%;
+  width: 100%;
 
-    background-color: #343a40;
-    height: 100%;
+  background-color: #343a40;
+  height: 100%;
 }
 
 .about-us {
-    width:100%;
-    height:100%;
+  width: 100%;
+  height: 100%;
 
-    padding: 100px;
-    color: white;
+  padding: 100px;
+  color: white;
 }
 
 .heading {
-    padding: 20px 10px;
-    font-size: 2.5rem;
-    color: #80ed99;
+  padding: 20px 10px;
+  font-size: 2.5rem;
+  color: #80ed99;
 }
 
 .about-us h3 {
-    padding: 10px;
-
+  padding: 10px;
 }
 
 .aboutme-deatils {
-    padding: 20px;
-    font-weight: 300;
+  padding: 20px;
+  font-weight: 300;
 }
 
 .about-me-divison {
-    display: flex;
+  display: flex;
 }
 
 .about-me-table {
-    width: 60%;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
 }
 
 .about-me-table li {
-    padding: 20px;
-    position: relative;
+  padding: 20px;
+  position: relative;
 }
 
 .about-me-table li::after {
-    position: absolute;
-    width: 100%;
-    left: 0px;
-    height: 1px;
-    background: linear-gradient(to left, transparent, #ffffff77, transparent);
-    content: '';
-    bottom: 0px;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  height: 1px;
+  background: linear-gradient(to left, transparent, #ffffff77, transparent);
+  content: "";
+  bottom: 0px;
 }
 
 .about-me-table span {
-    color: #80ed99;
-    font-weight: bold;
-    margin-right: 5px;
+  color: #80ed99;
+  font-weight: bold;
+  margin-right: 5px;
 }
 
 .about-me-table .buttonGroup {
-    grid-column: 1/span 2;
-    justify-content: center;
-    padding: 50px;
-    flex: 1;
+  grid-column: 1 / span 2;
+  justify-content: center;
+  padding: 50px;
+  flex: 1;
 }
 
 .skill-bar {
-    width: calc(40% - 20px);
+  width: calc(40% - 20px);
 }
 
 .skill-bar li {
-    width: 100%;
-    padding: 10px;
+  width: 100%;
+  padding: 10px;
 }
 
 .skill-bar p {
-    color: #80ed99;
-    font-weight: bold;
-    margin: 10px;
+  color: #80ed99;
+  font-weight: bold;
+  margin: 10px;
 }
 
 .skill-bar .bar {
-    width: 100%;
-    height: 15px;
-    background-color: #272c30;
-    border-radius: 20px;
-
+  width: 100%;
+  height: 15px;
+  background-color: #272c30;
+  border-radius: 20px;
 }
 
 .active-bar {
-    background-color: #80ed99;
-    height: 100%;
-    width: auto;
-    border-radius: 20px;
+  background-color: #80ed99;
+  height: 100%;
+  width: auto;
+  border-radius: 20px;
 }
 
 .services {
-    color: white;
-    display: grid;
-    grid-template-columns: repeat(3, calc(34% - 10px));
-    grid-template-rows: 100px calc(65% - 50px) calc(65% - 50px);
-    padding: 100px ;
-    box-sizing: border-box;
-    height: auto;
-    overflow: auto;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, calc(34% - 10px));
+  grid-template-rows: 100px calc(65% - 50px) calc(65% - 50px);
+  padding: 100px;
+  box-sizing: border-box;
+  height: auto;
+  overflow: auto;
 }
 
 .services .heading {
-    grid-column: 1/span 3;
+  grid-column: 1 / span 3;
 }
 
 .services .service {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.437);
-    border-radius: 5px;
-    margin: 20px;
-    backdrop-filter: blur(10px);
-    flex-direction: column;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.437);
+  border-radius: 5px;
+  margin: 20px;
+  backdrop-filter: blur(10px);
+  flex-direction: column;
 
-    transition-duration: 0.25s;
+  transition-duration: 0.25s;
 }
 
 .services .service i {
-    font-size: 3rem;
-    color:#80ed99
+  font-size: 3rem;
+  color: #80ed99;
 }
 
 .services .service .service-icon {
-    padding: 0px 50px;
-    border-radius: 5px;
-    margin: 20px auto;
+  padding: 0px 50px;
+  border-radius: 5px;
+  margin: 20px auto;
 }
-.service h2{
-    color:#80ed99
+.service h2 {
+  color: #80ed99;
 }
 .service:hover {
-    background-color: #80ed99;
-    color: #176d2d
+  background-color: #80ed99;
+  color: #176d2d;
 }
-.service:hover h2,.service:hover i{
-    color: #176d2d
+.service:hover h2,
+.service:hover i {
+  color: #176d2d;
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    padding: 10px 5px 40px 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 10px 5px 40px 5px;
 }
-
-
 
 .gallery h1,
 .gallery h2 {
-    grid-column: 1/span 3;
+  grid-column: 1 / span 3;
 }
 
 .gallery h2 {
-    color: white;
-    font-weight: 600;
-    font-size: 1.5rem;
-    padding: 20px 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 20px 10px;
 }
 
 .gallery .project {
-    margin: 25px 20px;
-    margin-top: 0px;
-    background: #212529;
-    padding: 5px;
-    border-radius: 20px;
+  margin: 25px 20px;
+  margin-top: 0px;
+  background: #212529;
+  padding: 5px;
+  border-radius: 20px;
 }
 
 .gallery .project img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit:scale-down;
-    border:none;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: scale-down;
+  border: none;
 }
 .projects-section {
-    display: flex;
-    flex-direction: column;
-   height: 100%;
-    padding: 60px 40px;
-    box-sizing: border-box;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 60px 40px;
+  box-sizing: border-box;
+  color: white;
 }
 .project {
-    display: flex;
-    flex-direction: column;
-    background: #1d1f22;
-    padding: 0;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  background: #1d1f22;
+  padding: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-
 .project:hover {
-    transform: scale(1.03);
-    box-shadow: 0 4px 12px rgba(128, 237, 153, 0.3);
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(128, 237, 153, 0.3);
 }
 
 .project img {
-    aspect-ratio: 4 / 3; /* maintain ratio */
-    width: 100%;
-    object-fit: cover;
-    display: block;
+  aspect-ratio: 4 / 3; /* maintain ratio */
+  width: 100%;
+  object-fit: cover;
+  display: block;
 }
 .project-title {
-    text-align: center;
-    color: white;
-    padding: 10px;
-    font-weight: 500;
-    font-size: 1rem;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
-
-
 .gallery-scroll-container {
-    flex: 1;
-    overflow-y: auto;
-    padding-right: 10px;
-    scrollbar-width: thin;
-    /* scrollbar-color: #80ed99 #212529; */
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+  scrollbar-width: thin;
+  /* scrollbar-color: #80ed99 #212529; */
 }
 
 .contactMe {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 80px calc(25% - 20px) calc(25% - 20px) calc(25% - 20px) calc(25% - 20px);
-    position: relative;
-    padding:100px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 80px calc(25% - 20px) calc(25% - 20px) calc(25% - 20px) calc(
+      25% - 20px
+    );
+  position: relative;
+  padding: 100px;
 }
 
 .contactMe h1 {
-    grid-column: 1/span 3;
-    font-size:2rem;
-    padding:30px;
+  grid-column: 1 / span 3;
+  font-size: 2rem;
+  padding: 30px;
 }
 
 .contactMe form {
-    grid-area: 2/2/ span 5/span 2;
+  grid-area: 2/2 / span 5 / span 2;
 }
 
 .contactinfo {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    color: white;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .contactinfo i {
-    padding: 5px;
-    font-size: 2rem;
-    color: #80ed99;
-    margin: 7px auto;
+  padding: 5px;
+  font-size: 2rem;
+  color: #80ed99;
+  margin: 7px auto;
 }
 
 .contactinfo h3 {
-    color: #80ed99;
+  color: #80ed99;
 }
 
 .contactMe form {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    width: 100%;
-    padding: 20px;
-    height: fit-content;
-    color: white;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  padding: 20px;
+  height: fit-content;
+  color: white;
 }
 
 .contactMe form h2 {
-    grid-column: 1/span 2;
-    padding: 20px;
-    display: flex;
+  grid-column: 1 / span 2;
+  padding: 20px;
+  display: flex;
 }
 
 .contactMe form input {
-    padding: 15px;
-    border-radius: 10px;
-    margin: 20px;
-    font-size: 1.1rem;
-    border: none;
-    color: white;
-    background-color: #212529;
-
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px;
+  font-size: 1.1rem;
+  border: none;
+  color: white;
+  background-color: #212529;
 }
 
 .contactMe form input:focus {
-    border: 1px solid #85f69f;
-    outline: none;
-
+  border: 1px solid #85f69f;
+  outline: none;
 }
 
 .contactMe form textarea {
-    width: calc(100% - 40px);
+  width: calc(100% - 40px);
 
-    grid-column: 1/span 2;
-    margin: 20px;
-    padding: 20px;
-    font-size: 1.1rem;
-    border-radius: 10px;
-    resize: none;
-    border:none;
-    border: none;
-    color:white;
-    background-color: #212529;
+  grid-column: 1 / span 2;
+  margin: 20px;
+  padding: 20px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  resize: none;
+  border: none;
+  border: none;
+  color: white;
+  background-color: #212529;
 }
 
 .contactMe form textarea:focus {
-    border: 1px solid #85f69f !important;
+  border: 1px solid #85f69f !important;
 }
-.contactMe button{
-    grid-column: 1/span 2;
-    margin:20px auto ;
-
+.contactMe button {
+  grid-column: 1 / span 2;
+  margin: 20px auto;
 }
-footer{
-    position:absolute;
-    bottom:0px;
-    right:0px;
-    text-align: center;
-    color:white;
-    width:100%;
-    font-weight: 200;
-    font-size: 0.8rem;
+footer {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  font-weight: 200;
+  font-size: 0.8rem;
 }
-footer li{
-    padding:10px;
+footer li {
+  padding: 10px;
 }
-form h2 .SocialLinks{
-    padding:5px;
-    width:fit-content;
-    margin-left:auto;
-    margin-right:10px;
-    background-color: #212529;
-    border-radius: 30px;
+form h2 .SocialLinks {
+  padding: 5px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 10px;
+  background-color: #212529;
+  border-radius: 30px;
 }
-form h2 .SocialLinks i{
-    padding:10px;
-    border-radius: 50%;
-    transition-duration: 0.25s;
+form h2 .SocialLinks i {
+  padding: 10px;
+  border-radius: 50%;
+  transition-duration: 0.25s;
 }
-form h2 .SocialLinks i:hover{
-    background-color: #176d2d;
+form h2 .SocialLinks i:hover {
+  background-color: #176d2d;
 }
-.about-us{
-    overflow: auto;
+.about-us {
+  overflow: auto;
 }
 .contactMe {
-    overflow-y: auto;
-    max-height: 100vh;
-    scroll-behavior: smooth;
-    padding: 100px 30px;
+  overflow-y: auto;
+  max-height: 100vh;
+  scroll-behavior: smooth;
+  padding: 100px 30px;
 }
 
-
 @media screen and (max-width: 1200px) {
-    .HomeContent {
-        padding: 60px;
-    }
+  .HomeContent {
+    padding: 60px;
+  }
 
-    .SideImg {
-        margin-right: 40px;
-    }
+  .SideImg {
+    margin-right: 40px;
+  }
 
-    .services {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .about-me-table {
-        width: 100%;
-    }
+  .about-me-table {
+    width: 100%;
+  }
 
-    .skill-bar {
-        width: 100%;
-        margin-top: 30px;
-    }
+  .skill-bar {
+    width: 100%;
+    margin-top: 30px;
+  }
 
-    .gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .contactMe {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 60px 30px;
-        gap: 30px;
-        align-items: center;
-    }
+  .contactMe {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 60px 30px;
+    gap: 30px;
+    align-items: center;
+  }
 
-    .contactinfo {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        text-align: center;
-    }
+  .contactinfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+  }
 
-    .contactMe form {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        align-items: center;
-    }
+  .contactMe form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 992px) {
-    aside {
-        width: 220px;
-    }
+  aside {
+    width: 220px;
+  }
 
-    .HomeContent {
-        padding: 40px;
-    }
+  .HomeContent {
+    padding: 40px;
+  }
 
-    .SideImg {
-        display: none;
-    }
+  .SideImg {
+    display: none;
+  }
 
-    .about-me-divison {
-        flex-direction: column;
-    }
+  .about-me-divison {
+    flex-direction: column;
+  }
 
-    .buttonGroup {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .buttonGroup {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .services {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-        padding: 50px 25px;
-    }
+  .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 50px 25px;
+  }
 
-    .services .heading {
-        grid-column: 1/-1;
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 20px;
-    }
+  .services .heading {
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
 
-    .services .service {
-        width: 100%;
-        padding: 20px;
-        margin: 0;
-        transition: all 0.3s ease;
-    }
+  .services .service {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    transition: all 0.3s ease;
+  }
 
-    .gallery {
-        grid-template-columns: repeat(3, 1fr);
-        padding: 60px 30px;
-    }
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 60px 30px;
+  }
 
-    .contactMe {
-        display: flex;
-        flex-direction: column;
-        padding: 60px 30px;
-        gap: 30px;
-        align-items: center;
-    }
+  .contactMe {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 30px;
+    gap: 30px;
+    align-items: center;
+  }
 
-    .contactinfo {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        text-align: center;
-    }
+  .contactinfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+  }
 
-    .contactinfo i {
-        font-size: 1.8rem;
-        transition: transform 0.3s ease;
-    }
+  .contactinfo i {
+    font-size: 1.8rem;
+    transition: transform 0.3s ease;
+  }
 
-    .contactinfo i:hover {
-        transform: scale(1.1);
-    }
+  .contactinfo i:hover {
+    transform: scale(1.1);
+  }
 
-    .contactMe form {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        width: 100%;
-        max-width: 600px;
-    }
+  .contactMe form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+  }
 
-    .contactMe form input,
-    .contactMe form textarea {
-        width: 100%;
-        padding: 14px;
-        font-size: 1rem;
-        border: 1px solid #444;
-        border-radius: 8px;
-        transition: border 0.3s ease;
-    }
+  .contactMe form input,
+  .contactMe form textarea {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    border: 1px solid #444;
+    border-radius: 8px;
+    transition: border 0.3s ease;
+  }
 
-    .contactMe form input:focus,
-    .contactMe form textarea:focus {
-        border-color: #80ed99;
-        outline: none;
-    }
+  .contactMe form input:focus,
+  .contactMe form textarea:focus {
+    border-color: #80ed99;
+    outline: none;
+  }
 
-    .contactMe form h2 {
-        font-size: 1.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .contactMe form h2 {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .contactMe button {
-        align-self: center;
-        padding: 12px 24px;
-        background-color: #80ed99;
-        border: none;
-        border-radius: 6px;
-        color: #212529;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-    }
+  .contactMe button {
+    align-self: center;
+    padding: 12px 24px;
+    background-color: #80ed99;
+    border: none;
+    border-radius: 6px;
+    color: #212529;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
 
-    .contactMe button:hover {
-        background-color: #64d17f;
-    }
+  .contactMe button:hover {
+    background-color: #64d17f;
+  }
 
-    .about-me-table .buttonGroup {
-        padding: 30px 0;
-    }
+  .about-me-table .buttonGroup {
+    padding: 30px 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    main {
-        flex-direction: column;
-    }
+  main {
+    flex-direction: column;
+  }
 
-    aside {
-        width: 100%;
-        height: auto;
-        flex-direction: row;
-        overflow-x: auto;
-        justify-content: space-around;
-    }
+  aside {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    overflow-x: auto;
+    justify-content: space-around;
+  }
 
-    .Links {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+  .Links {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-    aside li {
-        padding: 15px;
-        font-size: 1rem;
-        white-space: nowrap;
-    }
+  aside li {
+    padding: 15px;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
 
-    .mySwiper {
-        width: 100vw;
-    }
+  .mySwiper {
+    width: 100vw;
+  }
 
-    .HomeContent h1 {
-        font-size: 2.2em;
-    }
+  .HomeContent h1 {
+    font-size: 2.2em;
+  }
 
-    .HomeContent h2 {
-        font-size: 1.5em;
-    }
+  .HomeContent h2 {
+    font-size: 1.5em;
+  }
 
-    .HomeContent .heroline {
-        font-size: 1.1rem;
-        padding-right: 0;
-    }
+  .HomeContent .heroline {
+    font-size: 1.1rem;
+    padding-right: 0;
+  }
 
-    .heading {
-        font-size: 2rem;
-    }
+  .heading {
+    font-size: 2rem;
+  }
 
-    .services {
-        grid-template-columns: 1fr;
-        padding: 40px 20px;
-        gap: 20px;
-    }
+  .services {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    gap: 20px;
+  }
 
-    .services .service {
-        margin: 0 auto;
-        padding: 20px;
-        text-align: center;
-        transition: all 0.3s ease;
-    }
+  .services .service {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
 
-    .gallery {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 40px 20px;
-        gap: 20px;
-    }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px 20px;
+    gap: 20px;
+  }
 
-    .contactMe {
-        padding: 40px 20px;
-        gap: 20px;
-        align-items: center;
-    }
+  .contactMe {
+    padding: 40px 20px;
+    gap: 20px;
+    align-items: center;
+  }
 
-    .contactMe form h2 {
-        font-size: 1.2rem;
-        text-align: center;
-    }
+  .contactMe form h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 
-    .contactMe form {
-        gap: 10px;
-        max-width: 100%;
-        align-items: center;
-    }
+  .contactMe form {
+    gap: 10px;
+    max-width: 100%;
+    align-items: center;
+  }
 
-    .contactMe form input,
-    .contactMe form textarea {
-        font-size: 1rem;
-    }
+  .contactMe form input,
+  .contactMe form textarea {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
-    .HomeContent {
-        padding: 30px 15px;
-    }
+  .HomeContent {
+    padding: 30px 15px;
+  }
 
-    .heading {
-        font-size: 1.8rem;
-    }
+  .heading {
+    font-size: 1.8rem;
+  }
 
-    .HomeContent h1 {
-        font-size: 1.8em;
-    }
+  .HomeContent h1 {
+    font-size: 1.8em;
+  }
 
-    .HomeContent h2 {
-        font-size: 1.3em;
-    }
+  .HomeContent h2 {
+    font-size: 1.3em;
+  }
 
-    .services {
-        padding: 40px 20px;
-        gap: 20px;
-    }
+  .services {
+    padding: 40px 20px;
+    gap: 20px;
+  }
 
-    .services .service {
-        text-align: center;
-        padding: 20px;
-    }
+  .services .service {
+    text-align: center;
+    padding: 20px;
+  }
 
-    .services .service h2 {
-        font-size: 1.3rem;
-    }
+  .services .service h2 {
+    font-size: 1.3rem;
+  }
 
-    .services .service i {
-        font-size: 2.5rem;
-    }
+  .services .service i {
+    font-size: 2.5rem;
+  }
 
-    .services .heading {
-        font-size: 1.8rem;
-        margin-bottom: 10px;
-    }
+  .services .heading {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
 
-    .gallery {
-        grid-template-columns: 1fr;
-        padding: 40px 20px;
-        gap: 20px;
-    }
+  .gallery {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    gap: 20px;
+  }
 
-    .gallery .project img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
+  .gallery .project img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 
-    .contactMe {
-        padding: 30px 20px;
-        gap: 20px;
-        align-items: center;
-    }
+  .contactMe {
+    padding: 30px 20px;
+    gap: 20px;
+    align-items: center;
+  }
 
-    .contactinfo {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-        text-align: center;
-    }
+  .contactinfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+  }
 
-    .contactinfo i {
-        font-size: 1.5rem;
-    }
+  .contactinfo i {
+    font-size: 1.5rem;
+  }
 
-    .contactMe h1 {
-        font-size: 1.5rem;
-        text-align: center;
-    }
+  .contactMe h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 
-    .contactMe form h2 {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        font-size: 1.2rem;
-    }
+  .contactMe form h2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+  }
 
-    .about-us {
-        padding: 40px 20px;
-    }
+  .about-us {
+    padding: 40px 20px;
+  }
 
-    .aboutme-deatils {
-        padding: 10px;
-        font-size: 0.95rem;
-    }
+  .aboutme-deatils {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
 
-    .skill-bar p {
-        font-size: 1rem;
-    }
+  .skill-bar p {
+    font-size: 1rem;
+  }
 
-    .contactMe form input,
-    .contactMe form textarea {
-        font-size: 1rem;
-        padding: 12px;
-    }
+  .contactMe form input,
+  .contactMe form textarea {
+    font-size: 1rem;
+    padding: 12px;
+  }
 
-    .contactMe button {
-        width: 100%;
-        padding: 12px;
-    }
+  .contactMe button {
+    width: 100%;
+    padding: 12px;
+  }
 
-    footer li {
-        font-size: 0.75rem;
-        padding: 5px;
-    }
+  footer li {
+    font-size: 0.75rem;
+    padding: 5px;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    aside li {
-        padding: 10px;
-        font-size: 0.8rem;
-    }
+  aside li {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
 
-    .HomeContent h1 {
-        font-size: 1.5em;
-    }
+  .HomeContent h1 {
+    font-size: 1.5em;
+  }
 
-    .HomeContent h2 {
-        font-size: 1.2em;
-    }
+  .HomeContent h2 {
+    font-size: 1.2em;
+  }
 
-    .HomeContent .heroline {
-        font-size: 1rem;
-    }
+  .HomeContent .heroline {
+    font-size: 1rem;
+  }
 
-    .buttonGroup button {
-        font-size: 1rem;
-        padding: 8px 16px;
-    }
+  .buttonGroup button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
 
-    .services .service i {
-        font-size: 2.2rem;
-    }
+  .services .service i {
+    font-size: 2.2rem;
+  }
 
-    .services .service h2 {
-        font-size: 1.2rem;
-    }
+  .services .service h2 {
+    font-size: 1.2rem;
+  }
 
-    .contactinfo h3 {
-        font-size: 1rem;
-    }
+  .contactinfo h3 {
+    font-size: 1rem;
+  }
 
-    .contactMe form h2 {
-        font-size: 1rem;
-    }
+  .contactMe form h2 {
+    font-size: 1rem;
+  }
 
-    .aboutme-deatils {
-        font-size: 0.9rem;
-    }
+  .aboutme-deatils {
+    font-size: 0.9rem;
+  }
 }
-
